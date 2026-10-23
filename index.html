@@ -1,348 +1,68 @@
 
 <!DOCTYPE html>
 <html lang="pt-PT">
-	<style>
-div.blog-preview {
-  position: relative;        /* Necessário para alinhar a imagem de fundo */
-  z-index: 1;                /* Garante que o texto fica por cima */
-  background: none !important; /* Remove qualquer cor antiga */
-  border-radius: 8px;        /* Opcional: arredonda os cantos da caixa */
-  overflow: hidden;          /* Garante que o fundo não sai fora dos cantos */
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O meu site</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-div.blog-preview::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  
-  /* Configurações da tua imagem */
-  background-image: url('https://i.ibb.co/WWLX1Nc3/image.png') !important;
-  background-size: cover;
-  background-position: center;
-  
-  /* TRANSPARÊNCIA: Altera o valor abaixo (0.0 a 1.0) */
-  opacity: 0.7;              /* 0.5 significa 50% de transparência */
-  
-  z-index: -1;               /* Coloca a imagem estritamente atrás do texto */
-}
-  
-.general-about{
-    background-image: url('https://i.ib.co/wHvx7NX/output-onlinegiftools.gif') !important;
-background-size: cover;
-z-index: -1;
-padding: 0px 10px 10px;
-  }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #f5f5f5;
+    }
 
-.url-info {
-    background: url(https://i.ibb.co/ZpDNsSv8/5f21222d1790ff40f3d8b0b3a01b67f3-1.png);
-    background-position: center;
-    background-size: cover;
-    font-size: 0px;
-    aspect-ratio: 1.8 / 1;
+    header {
+      padding: 24px;
+      border-bottom: 1px solid #333;
+    }
 
-}
+    main {
+      max-width: 850px;
+      margin: 100px auto;
+      padding: 24px;
+    }
 
-.logo {
-content:url("https://i.ibb.co/Kz71tttj/147431ce07c3e9a5c96e2acccc931dbc.jpg");
-}
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      margin-bottom: 16px;
+    }
 
-html:before {
-content: " ";
-display: block; position: fixed;
-top: 0; left: 0; bottom: 0; right: 0;
-background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.16) 50%);
-z-index: 2;
-background-size: 100% 4px, 3px 100%;
-pointer-events: none;
-}
+    p {
+      color: #bbb;
+      line-height: 1.7;
+    }
 
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 20px;
+      background: white;
+      color: black;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    O MEU SITE
+  </header>
 
-
-body {
-background-image: url(https://i.ibb.co/b5jfQJtx/7dc155035ee5763b4dab9a39eb2dc207.gif);
-background-size: 1000px;
-background-attachment: fixed;
-}
-<style></style>
-
-<!-- pequeno -->
-<style>
-main {
-    background-image: url(https://i.ibb.co/Q7Vz39WS/download-8.jpg);
-    background-size: 800px;
-    color: black;
-    padding: 6px 0px;
-    font-size: 80%;
-}
-</style>
-
-
-<!-- ==================== Imagens ==================== -->
-
-<img src="https://i.ibb.co/qMPG3WGr/Screenshot-2026-06-11-184600.png" width="500"/>
-
-<img src="https://i.ibb.co/BK43sY48/notepad.png" width="500"/>
-
-<img src="https://i.ibb.co/5hPh89H9/tv.png" width="500"/>
-
-
-<!-- ==================== Autoplay ==================== -->
-
-<iframe src="https://open.spotify.com/embed/playlist/0QysK6jHFG4hkAJwNTwtED?si=eb3fa3928ee9430c?utm_source=generator" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-
-
-<!-- ==================== Vinyl ==================== -->
-
-
-
-My vinyl collection
-
-
-<style>
-#vinyl-gallery * {
-    all: unset;
-  }
- 
-  #vinyl-gallery {
-    all: initial!important;
-    width: 100%!important;
-    height: 230px!important;
-    margin: 30px 0!important;
-    display: flex!important;
-    flex-direction: row!important;
-    position: relative!important;
-    margin-left: -6px!important;
-  }
- 
-  #vinyl-gallery .vinyl {
-      all:unset!important;
-    perspective: 500px !important;
-    width: 18px!important;
-    transition: width 0.5s!important;
-  }
- 
-  #vinyl-gallery .vinyl:hover {
-    width: 148px!important;
-  }
- 
-  #vinyl-gallery img {
-      all:unset!important;
-    transition: transform 0.5s, width 0.5s, height 0.5s, margin-top 0.5s!important;
-    width: 180px!important;
-    height: 180px!important;
-    transform: rotateX(0deg) rotateY(25deg)!important;
-    transform-style: preserve-3d!important;
-    border-radius: 4px!important;
-    border: 2px solid rgba(0, 0, 0, 0.1)!important;
-object-fit: cover!important;
-  }
- 
-  #vinyl-gallery .vinyl:hover img {
-    transform: rotateX(0deg) rotateY(10deg)!important;
-    width: 188px!important;
-    height: 188px!important;
-    margin-top: -2px!important;
-  }
- 
-  #vinyl-gallery .title {
-    color: #000000;
-    display: block;
-    visibility: hidden;
-    position: absolute;
-    bottom: 0px;
-    text-align: center;
-    width: 100%;
-    padding-left: 6px;
-  }
- 
-  #vinyl-gallery .vinyl:nth-child(n):hover + .title {
-    visibility: visible;
-  }
-
-</style>
-<div id="vinyl-gallery">
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/31f4c2aa9f2dbfda57b2b71d81189310/12096953/the-strokes-is-this-it-Cover-Art.jpg"/>
-  </div>
-  <div class="title">The Strokes - Is This It</div>
-
-  <div class="vinyl">
-    <img src="https://e.snmc.io/i/600/w/5208d6111ee08cf57dc5cd9667f45ae9/7346711/arctic-monkeys-whatever-people-say-i-am-thats-what-im-not-Cover-Art.jpg"/>
-  </div>
-  <div class="title">Arctic Monkeys - Whatever People Say I Am Thats What Im Not</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/63ebc0e4a7fc63a30dfdde2919c30f3b/9103050/the-jimi-hendrix-experience-electric-ladyland-Cover-Art.jpg"/>
-  </div>
-  <div class="title">Jimi Hendrix - Electric Ladyland</div>
-
-  <div class="vinyl">
-    <img src="https://i.discogs.com/1TYS9AocSRdulh9ge3vA-UG39Wy5z6PWoqTtFPVNGrY/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MTMw/NDMxLTE3MzU0OTg3/MjgtNzMxNi5qcGVn.jpeg"/>
-  </div>
-  <div class="title">Beastie Boys - Tough Guys</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/cc1d64093a10b99cfa75a05bab88918a/2933197/the-stranglers-stranglers-iv-rattus-norvegicus-Cover-Art.jpg"/>
-  </div>
-  <div class="title">The Stranglers - IV</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/dd440d3089f0b8ff983f18062fefef58/1410312/la-frontera-capturados-vivos-Cover-Art.jpg"/>
-  </div>
-  <div class="title">La Frontera - Capturados Vivos</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/25c1999b45788e025fc93f6f342056c1/1269433/the-sound-heads-and-hearts-Cover-Art.jpg"/>
-  </div>
-  <div class="title">Heads And Hearts - The Sound</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/ab2f3f4088e29d58f25eccdae8956d25/1743926/carlos-paredes-guitarra-portuguesa-Cover-Art.jpg"/>
-  </div>
-  <div class="title">Carlos Pareds - Guitarra Portuguesa</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/4d7fde928681113f61e2a7779f7cb224/12424339/nas-illmatic-Cover-Art.jpg"/>
-  </div>
-  <div class="title">Nas - Illmatic</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/ceb27a7bd1f0b8b17867d726e3a14fc1/12913149/a-tribe-called-quest-midnight-marauders-Cover-Art.jpg"/>
-  </div>
-  <div class="title">A tribe Called Quest - Midnight Marauders</div>
-
-  <div class="vinyl">
-    <img src="https://cdn.sonemic.net/i/600/w/b7dea21d1d1e3f0d6d466ac1ff13588d/2662335/kanye-west-late-registration-Cover-Art.jpg"/>
-  </div>
-  <div class="title">Kanye West - Late Registration</div>
-
-<div class="vinyl">
-    <img src="https://i.discogs.com/GOt_CUstxxWAC4j8KGwepRIKED5knYlWs9bBKanzhlI/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MDU4/OTQ5LTE2OTI5OTQy/MDMtNTg0MS5qcGVn.jpeg"/>
-  </div>
-  <div class="title">Tyler The Creator - The Estate Sale</div>
-
-<div class="vinyl">
-    <img src="https://i.discogs.com/RnfZ5rqfTU95QbWJmCGuzDM5HhqviLpk_2LWAZTcjdA/rs:fit/g:sm/q:90/h:588/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NzEy/OS0xMTUwMjU2MTQ2/LmpwZWc.jpeg"/>
-  </div>
-  <div class="title">Green Day - Dookie</div>
-
-<div class="vinyl">
-    <img src="https://i.discogs.com/07do6nRCrhEJpXVGBhXyvDAyuSE1qwH3tZ8uSpHWK88/rs:fit/g:sm/q:90/h:583/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NjY3/OS0xNDg5Njc0MzIy/LTM0OTkuanBlZw.jpeg"/>
-  </div>
-  <div class="title">Black Sabath - Paranoid</div>
-</div>
-
-
-
-<style>
-@font-face {
-  font-family: 'ScienceGothic';
-  /* URL corrigido para apontar diretamente para o ficheiro */
-  src: url('https://raw.githubusercontent.com/googlefonts/science-gothic/main/fonts/variable/ScienceGothic%5BCTRS%2Cslnt%2Cwdth%2Cwght%5D.ttf') format('truetype');
-  font-weight: 100 900;     
-  font-stretch: 50% 200%;   
-  font-style: oblique 0deg 12deg; /* Science Gothic usa um eixo de slant (slnt), ajustado aqui */
-  font-display: swap;       
-}
-
-  .profile h1,
-  .blog-preview,
-  .blog-preview p,
-  .blog-preview a,
-  .general-about .details p  {
-    font-family: 'ScienceGothic', cursive;
-    font-size: 20px;      /* tamanho da letra */
-    color: #fffde2;       /* cor do texto */
-  }
-
- .profile .blurbs .inner p {
-    font-family: 'ScienceGothic', cursive;
-    font-size: 20px;      /* tamanho da letra */
-    color: #ac2f2f;       /* cor do texto */
-  }
-
-
-<div style="float:  ; max-height: 100px; position: fixed; left: 13px; top: 12px; z-index: 200;">
-<img src="https://www.youtube.com/watch?v=IxX_QHay02M" height="100"/>
-
-
-<style>
-nav .top,
-nav .links {
-    background: #0055e8;
-    padding: 15px 10px 14px 10px;
-    display: flex
-;
-    position: relative;
-}
-
-
-footer {
-    text-align: center;
-    font-size: 70%;
-    margin: 10px 0 10px;
-    padding: 10px 5px;
-    background-color: #e3e3e3;
-    background-color: #e3e3e300;
-}
-</style>
-
-<iframe width="0" height="0" src="https://www.youtube.com/embed/fKqKM-gvK_w?loop=1&autoplay=1&controls=0&start=0&playlist=fKqKM-gvK_w&" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
-</iframe>
-
-<style>
-
-	main:before {
-	width: 100%;
-	height: 300px;
-	display: block;
-	content: ""; 
-	background-image: url(https://i.ibb.co/1GN70dTG/lana-del-ray.png);
-	background-position: top;
-	background-size: cover;
-}
-@media only screen and (max-width: 500px) {
-	main:before{
-		height: 200px;
-	}
-}
-
-footer {
-    border-radius: 15px;
-    background-image: url(https://i.pinimg.com/736x/1c/d6/43/1cd643735800abf90c47c8789130d7e8.jpg);
-    color: white;
-}</style>
-
-
-<style>* {cursor: url(https://cur.cursors-4u.net/games/gam-12/gam1113.cur), auto;}</style><a href="https://www.cursors-4u.com/cursor/2010/05/08/wii-pointer-1-tilt-normal.html" target="_blank" title="Wii Pointer #1 Tilt Normal"><img src="https://cur.cursors-4u.net/cursor.png" alt="Wii Pointer #1 Tilt Normal" style="position:absolute; top: 0px; right: 0px;"/></a>
-
-<style>
-.profile .blurbs .heading {
-background-image: url(https://i.ibb.co/mVdQNB4z/blurbs.png);
-}
-
-.profile .blurbs .inner {
-background-color: #e3e3e3;
-border: 4px solid #0055e8;
-}
-
-div.contact {
-background-color: #e3e3e3;
-}
-
-.profile .contact .heading {
-background-image: url(https://i.ibb.co/1JXx1QVK/Captura-de-ecr-2025-07-17-125743.png)
-}
-
-.profile .contact, .profile .table-section, .setting-section, .home-actions {
-    width: 100%;
-    border: 4px solid #0055e8;
-    border: 4px solid #0055e8;
-    margin: 10px 0;
-}
-
-head {
-    display: none;
-    background-image: url(https://external-media.spacehey.net/media/syOZVfSTuoSn9hDt11sNLa6bJuWOUjmIQieQH_I2cqQ0=/https://i.pinimg.com/1200x/ba/d1/23/bad1238….jpg);
-}
+  <main>
+    <h1>Bem-vindo.</h1>
+    <p>
+      Este é o meu site, criado por mim
+      e alojado no meu próprio computador.
+    </p>
+    <a href="mailto:contacto@example.com">
+      Entrar em contacto
+    </a>
+  </main>
+</body>
+</html>
